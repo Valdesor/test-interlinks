@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> </title>
+</head>
+
+<body>
+  <script>
+    var students = [          // створив клас студенти
+      { name: "Vasya", Knowledge: 50 }, // вказав імя студентів і рівень знань
+      { name: "Oleg", Knowledge: 58 },
+      { name: "Olga", Knowledge: 88 },
+      { name: "Ira", Knowledge: 66 }
+    ];
+
+    var Interlinks = students.filter(function(passedTest) { //клас Interlinks відфільровує студентів 
+      return passedTest.Knowledge > 55; // тих в кого менше 55 балів
+    });
+    console.log(Interlinks);// вивід в консоль результат має бути [ { "name": "Oleg", "Knowledge": 58 }, { "name": "Olga", "Knowledge": 88 }, { "name": "Irga", "Knowledge": 66 } ]
+  </script>                 
+</body>
+
+</html>
